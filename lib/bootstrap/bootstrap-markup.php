@@ -59,9 +59,9 @@ function mov_attr_content_sidebar_wrap( $attributes ) {
     
 	$container_class = mov_container_class();
 	
-    $attributes['class'] = "{$container_class} content-sidebar-wrap";
+	$attributes['class'] = "{$container_class} content-sidebar-wrap";
 	
-    return $attributes;
+	return $attributes;
     
 }
 
@@ -90,15 +90,15 @@ add_action( 'genesis_after_content', 'mov_content_sidebar_wrap_row_close', 15 );
  */
 function mov_structural_wrap( $output, $original_output ) {
     
-    if( 'open' == $original_output ) {
-        $output = $output . '<div class="row">';
-    }
+	if( 'open' == $original_output ) {
+ 		$output = $output . '<div class="row">';
+	}
     
-    if( 'close' == $original_output ) {
-        $output = '</div> <!-- .row end -->' . $output;
-    }
+	if( 'close' == $original_output ) {
+		$output = '</div> <!-- .row end -->' . $output;
+	}
     
-    return $output;
+	return $output;
     
 }
 function mov_content_sidebar_wrap_row_open() {
@@ -123,14 +123,14 @@ add_filter( 'genesis_attr_title-area', 'mov_attr_title_area' );
  */
 function mov_attr_title_area( $attributes ) {
     
-    global $wp_registered_sidebars;
+	global $wp_registered_sidebars;
     
-    if ( ( isset( $wp_registered_sidebars['header-right'] ) && is_active_sidebar( 'header-right' ) ) || has_action( 'genesis_header_right' ) ) {
-        $attributes['class'] = 'col-sm-6 title-area';
-    }
+	if ( ( isset( $wp_registered_sidebars['header-right'] ) && is_active_sidebar( 'header-right' ) ) || has_action( 'genesis_header_right' ) ) {
+		$attributes['class'] = 'col-sm-6 title-area';
+	}
 	else {
 		$attributes['class'] = 'col-xs-12 title-area';
-    }
+	}
     
 	return $attributes;
 }
@@ -146,7 +146,7 @@ add_filter( 'genesis_attr_header-widget-area', 'mov_attr_header_widget_area' );
  */
 function mov_attr_header_widget_area( $attributes ) {
     
-    $attributes['class'] = 'col-sm-6 widget-area header-widget-area';
+	$attributes['class'] = 'col-sm-6 widget-area header-widget-area';
 	return $attributes;
     
 }
@@ -162,7 +162,7 @@ add_filter( 'genesis_attr_nav-primary', 'mov_attr_nav_primary' );
  */
 function mov_attr_nav_primary( $attributes ) {
     
-    $attributes['class'] = 'nav-primary hidden-sm hidden-xs';
+	$attributes['class'] = 'nav-primary hidden-sm hidden-xs';
 	return $attributes;
     
 }
@@ -178,7 +178,7 @@ add_filter( 'genesis_attr_nav-secondary', 'mov_attr_nav_secondary' );
  */
 function mov_attr_nav_secondary( $attributes ) {
     
-    $attributes['class'] = 'nav-secondary hidden-sm hidden-xs';
+	$attributes['class'] = 'nav-secondary hidden-sm hidden-xs';
 	return $attributes;
     
 }
@@ -196,11 +196,11 @@ function mov_nav_menu_args( $args ) {
     
 	if( 'primary' == $args['theme_location'] ) {
 		$args['menu_class'] = 'col-xs-12 menu genesis-nav-menu menu-primary';
-    }
+	}
     
 	if( 'secondary' == $args['theme_location'] ) {
 		$args['menu_class'] = 'col-xs-12 columns menu genesis-nav-menu menu-secondary';
-    }
+	}
     
 	return $args;
 }
