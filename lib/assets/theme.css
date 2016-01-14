@@ -279,6 +279,9 @@ a.alignright, img.alignright, .wp-caption.alignright {
 .featured-content .entry-meta {
 	clear: both;
 }
+.featured-content .sticky {
+	padding: 0;
+}
 .widget_calendar table {
 	margin: 0;
 }
