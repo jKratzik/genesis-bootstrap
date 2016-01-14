@@ -334,7 +334,7 @@ function mov_attr_sidebar_secondary( $attributes ) {
 	$layout = genesis_site_layout();
 	
 	if( 'content-sidebar-sidebar' == $layout ) {
-		$column_class = 'col-lg-2 col-md-4 col-sm-6';
+		$column_class = 'col-lg-2 col-md-4 col-sm-6 pull-right';
 	}
 	
 	if( 'sidebar-sidebar-content' == $layout ) {
@@ -342,7 +342,7 @@ function mov_attr_sidebar_secondary( $attributes ) {
 	}
     
 	if( 'sidebar-content-sidebar' == $layout ) {
-        $column_class = 'col-lg-2 col-lg-pull-10 col-md-3 col-md-pull-9 col-sm-6';
+        	$column_class = 'col-lg-2 col-lg-pull-10 col-md-3 col-md-pull-9 col-sm-6';
 	}
     
 	$attributes['class'] = apply_filters( "mov_sidebar-secondary_class_{$layout}", $column_class ) . ' sidebar sidebar-secondary widget-area';
