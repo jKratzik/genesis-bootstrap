@@ -10,3 +10,9 @@ function child_container_class() {
     return 'container-fluid';
 }
 ```
+
+## Styling your theme
+Movelize comes with basic CSS styling as a starting point to apply your own settings. Those settings are defined in *lib/assets/theme.css* and contain - among others:
+- Form elements and pagination styling that apply Bootstrap CSS to Genesis classes
+- Truly responsive gallery styling with proper "line breaks" after items with long captions
+- Basic styles for navigation, WordPress classes, widgets, comments, ...
