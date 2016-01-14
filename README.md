@@ -1,7 +1,7 @@
 # Movelize
 Visit the [demo website](http://movelize.com/)
 
-A Genesis starter child theme that applies Bootstrap grid CSS classes to the Genesis HTML markup through custom filters and actions. The theme filters the Genesis CSS classes to apply the Bootstrap `container` `row`and `column grid`classes.
+A Genesis starter child theme that applies Bootstrap grid CSS classes to the Genesis HTML markup through custom filters and actions. The theme filters the Genesis CSS classes to apply the Bootstrap `container` `row` and `column grid` classes.
 Those modifications are done in *lib/bootstrap/bootstrap-markup.php*.
 
 Don't edit this file to apply your changes. Instead, hook into the actions and filters that are provided by Movelize or Genesis.
@@ -29,5 +29,5 @@ Don't edit theme.css to apply your own CSS but use the empty *style.css* instead
 When new Movelize versions are committed, simply upload the *lib* folder to your child theme.
 
 #### Why I had the idea for the starter theme
-I implemented Bootstrap into 2 client projects that I developed as custom Genesis child themes - http://www.kemke-altmetallankauf.de and http://rohwedder-landingpage.mohanty-gmbh.de. Then I optimized the code with hooks, extended the basic CSS and after extensive tests I released it now as my first Github project.
+I implemented Bootstrap into 2 client projects that I developed as custom Genesis child themes - http://www.kemke-altmetallankauf.de and http://rohwedder-landingpage.mohanty-gmbh.de. Then I extended the code with hooks, optimized the basic CSS and after extensive testing I released it now as my first Github project.
 
