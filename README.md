@@ -16,3 +16,12 @@ Movelize comes with basic CSS styling as a starting point to apply your own sett
 - Form elements and pagination styling that apply Bootstrap CSS to Genesis classes
 - Truly responsive gallery styling with proper "line breaks" after items with long captions
 - Basic styles for navigation, WordPress classes, widgets, comments, ...
+
+Don't edit theme.css to apply your own CSS but use the empty *style.css* instead.
+
+## What else is included in the theme files?
+- mmenu mobile navigation (http://mmenu.frebsite.nl)
+- Elegant Icon Font (https://www.elegantthemes.com/blog/resources/elegant-icon-font)
+
+### How to update your custom theme:
+When new Movelize versions are committed, simply upload the *lib* folder to your child theme.
