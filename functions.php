@@ -13,23 +13,23 @@ require_once( CHILD_DIR . '/lib/bootstrap/bootstrap-markup.php' );
 //* Load styles
 add_action( 'wp_enqueue_scripts', 'mov_enqueue_styles_scripts', 0 );
 function mov_enqueue_styles_scripts() {
-	
-	// Bootstrap files: Theme CSS and Jabascript can optionally be included
-	wp_enqueue_style( 'mov-bootstrap', CHILD_URL . '/lib/bootstrap/bootstrap.min.css', array(), '3.3.6' );
-	//wp_enqueue_style( 'mov-bootstrap-theme', CHILD_URL . '/lib/bootstrap/bootstrap-theme.min.css', array(), '3.3.6' );
-	//wp_enqueue_script( 'mov-bootstrap-js', CHILD_URL . '/lib/bootstrap/bootstrap.min.js', array( 'jquery' ), '3.3.6' );
-	
+
+	// Bootstrap files: Theme CSS and Javascript can optionally be included
+	wp_enqueue_style( 'mov-bootstrap', get_stylesheet_directory_uri() . '/lib/bootstrap/bootstrap.min.css', array(), '3.3.6' );
+	//wp_enqueue_style( 'mov-bootstrap-theme', get_stylesheet_directory_uri() . '/lib/bootstrap/bootstrap-theme.min.css', array(), '3.3.6' );
+	//wp_enqueue_script( 'mov-bootstrap-js', get_stylesheet_directory_uri() . '/lib/bootstrap/bootstrap.min.js', array( 'jquery' ), '3.3.6', true );
+
 	// Elegant icon font
-	wp_enqueue_style( 'mov-elegant-font', CHILD_URL . '/lib/elegant-fonts/style.css', array(), CHILD_THEME_VERSION );
-	
+	wp_enqueue_style( 'mov-elegant-font', get_stylesheet_directory_uri() . '/lib/elegant-fonts/style.css', array(), CHILD_THEME_VERSION );
+
 	// mmenu - Mobile navigation
-	wp_enqueue_style( 'mov-mmenu', CHILD_URL . '/lib/mmenu/jquery.mmenu.all.css', array(), '5.5.3' );
-	wp_enqueue_script( 'mov-mmenu-js', CHILD_URL . '/lib/mmenu/jquery.mmenu.min.all.js', array( 'jquery' ), '5.5.3' );
-	
+	wp_enqueue_style( 'mov-mmenu', get_stylesheet_directory_uri() . '/lib/mmenu/jquery.mmenu.all.css', array(), '5.5.3' );
+	wp_enqueue_script( 'mov-mmenu-js', get_stylesheet_directory_uri() . '/lib/mmenu/jquery.mmenu.min.all.js', array( 'jquery' ), '5.5.3', true );
+
 	// Basic theme CSS and Javascript
-    	wp_enqueue_style( 'mov-theme', CHILD_URL . '/lib/assets/theme.css', array(), CHILD_THEME_VERSION );
-	wp_enqueue_script( 'mov-theme-js', CHILD_URL . '/lib/assets/theme.js', array( 'jquery' ), CHILD_THEME_VERSION );
-	
+    wp_enqueue_style( 'mov-theme', get_stylesheet_directory_uri() . '/lib/assets/theme.css', array(), CHILD_THEME_VERSION );
+	wp_enqueue_script( 'mov-theme-js', get_stylesheet_directory_uri() . '/lib/assets/theme.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+
 }
 
 //* Add HTML5 markup structure
